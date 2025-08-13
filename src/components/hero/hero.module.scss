@@ -1,3 +1,53 @@
-.hero {
-	// styles for Hero
+.hero__container {
+	display: flex;
+	padding-block: 60px;
+}
+
+.hero__content {
+	flex-grow: 1;
+	flex-shrink: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 64px;
+}
+
+.hero__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 32px;
+}
+
+.hero__background {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.hero__image {
+	max-width: 630px;
+	max-height: 630px;
+	width: 100%;
+	height: 100%;
+}
+
+.hero__title {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.hero__title * {
+	-webkit-text-stroke: 2px $color-black;
+}
+
+.hero__subtitle {
+	@include paragraph-p2;
+	color: $color-gray-500;
+}
+
+.hero__bar {
+	display: flex;
+	gap: 32px;
 }

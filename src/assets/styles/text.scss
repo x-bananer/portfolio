@@ -1,0 +1,67 @@
+.text-h1 {
+	@include heading-h1;
+}
+.text-h2 {
+	@include heading-h2;
+}
+.text-h3 {
+	@include heading-h3;
+}
+.text-h4 {
+	@include heading-h4;
+}
+.text-h5 {
+	@include heading-h5;
+}
+.text-h6 {
+	@include heading-h6;
+}
+.text-p1 {
+	@include paragraph-p1;
+}
+.text-p2 {
+	@include paragraph-p2;
+}
+.text-p3 {
+	@include paragraph-p3;
+}
+.text-btn1 {
+	@include button-text-1;
+}
+.text-btn2 {
+	@include button-text-2;
+}
+.text-underlined {
+	@include underlined;
+}
+.text-display {
+	@include display;
+}
+.text-display-m {
+	@include display-m;
+}
+.text-subheading {
+	@include subheading;
+}
+.text-w-200 {
+    font-weight: 200;
+}
+.text-w-400 {
+	font-weight: 400;
+}
+.text-w-500 {
+	font-weight: 500;
+}
+.text-w-600 {
+	font-weight: 600;
+}
+.text-w-700 {
+	font-weight: 700;
+}
+.text-w-800 {
+	font-weight: 800;
+}
+.text-outlined {
+    @include text-outlined;
+}
+

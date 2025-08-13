@@ -12,8 +12,8 @@
 	font-weight: 600;
 	cursor: pointer;
 	border: 2px solid transparent;
-    height: 56px;
-    transition: all 0.3s ease;
+	height: 56px;
+	transition: all 0.3s ease;
 
 	&:disabled {
 		background-color: $color-neutral;
@@ -33,18 +33,23 @@
 }
 
 .button.button--square {
-    width: 56px;
+	width: 56px;
+	padding: 0;
+
+	&:hover {
+		transform: scale(1.15);
+	}
 }
 
 .button.button--small {
-    @include button-text-2;
+	@include button-text-2;
 
 	padding-inline: 16px;
-    height: 48px;
+	height: 48px;
 }
 
 .button.button--small.button--square {
-    width: 48px;
+	width: 48px;
 }
 
 .button.button--simple {
@@ -70,7 +75,7 @@
 	height: unset;
 
 	&:after {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: -2px;
 		left: 0;
@@ -86,7 +91,19 @@
 }
 
 .button.button--small.button--link {
-    @include heading-h6;
+	@include heading-h6;
+}
+
+.button.button--light {
+	background-color: $color-white;
+	color: $color-black;
+	border-color: $color-black;
+
+	&:hover {
+		background-color: $color-black;
+		color: $color-white;
+		border-color: $color-black;
+	}
 }
 
 .button.button--link.button--light {
@@ -95,4 +112,9 @@
 	&::after {
 		background-color: $color-white;
 	}
+}
+
+.button.button--simple.button--light {
+	background-color: unset;
+	color: $color-white;
 }
