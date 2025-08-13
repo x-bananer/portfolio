@@ -1,14 +1,12 @@
-@use '@/assets/styles/index' as *;
-
 html,
 body,
 #root {
 	height: 100%;
 	min-height: 100vh;
 	scrollbar-gutter: stable;
-    font-family: $font-family-main;
+	font-family: $font-family-main;
 	font-size: $p2-font-size;
-    line-height: $p2-line-height;
+	line-height: $p2-line-height;
 	background-color: $color-white;
 }
 
@@ -80,30 +78,31 @@ input {
 }
 
 input:-webkit-autofill {
-  animation-name: on-auto-fill-start;
+	animation-name: on-auto-fill-start;
 }
 
 input:not(:-webkit-autofill) {
-  animation-name: on-auto-fill-cancel;
+	animation-name: on-auto-fill-cancel;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+	appearance: textfield;
+	-moz-appearance: textfield;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
-    box-shadow: 0 0 0 1000px transparent inset !important;
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: $color-gray-800 !important;
-    color: $color-gray-800 !important;
+	-webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+	box-shadow: 0 0 0 1000px transparent inset !important;
+	transition: background-color 5000s ease-in-out 0s;
+	-webkit-text-fill-color: $color-gray-800 !important;
+	color: $color-gray-800 !important;
 }

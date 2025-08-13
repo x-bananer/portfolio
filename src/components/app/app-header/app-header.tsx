@@ -1,9 +1,23 @@
+import { useState, useEffect } from "react";
+import { FiDownload } from "react-icons/fi";
+
+import type { ReactNode } from "react";
+
+import Button from "../../../components/_block/button/button";
+import logo from "../../../assets/images/logo.png";
+
 import styles from "./app-header.module.scss";
 
-import { useState, useEffect } from "react";
+interface AppHeaderProps {
+	children?: ReactNode;
+}
 
-const AppHeader = () => {
+const AppHeader = ({ children }: AppHeaderProps) => {
 	const [hasShadow, setHasShadow] = useState(false);
+
+	const handleLogoClick = () => {
+		window.location.reload();
+	};
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -15,8 +29,24 @@ const AppHeader = () => {
 	}, []);
 
 	return (
-		<div className={`${styles["app-header"]} ${hasShadow && styles["app-header--shadowed"]}`}>
-			<div className={`${styles["app-header__container"]} layout`}>Header</div>
+		<div
+			className={`${styles["app-header"]} ${
+				hasShadow && styles["app-header--shadowed"]
+			}`}
+		>
+			<div className={`${styles["app-header__container"]} layout`}>
+				<Button type="simple" onClick={handleLogoClick}>
+					<img
+						className={styles["app-header__logo"]}
+						src={logo}
+						alt="Frontend Developer Portfolio | Kseniia Shlenskaia"
+					/>
+				</Button>
+				{children}
+				<Button>
+					Resume <FiDownload size={20} className="ml-xs" />
+				</Button>
+			</div>
 		</div>
 	);
 };

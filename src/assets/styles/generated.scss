@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+@mixin generate-margin-classes($abbreviation, $property, $map) {
+	@each $size, $value in $map {
+		.m#{$abbreviation}-#{$size} {
+			margin-#{$property}: $value !important;
+		}
+	}
+}
+@mixin generate-negative-margin-classes($abbreviation, $property, $map) {
+	@each $size, $value in $map {
+		.-m#{$abbreviation}-#{$size} {
+			margin-#{$property}: -$value !important;
+		}
+	}
+}
+@mixin generate-padding-classes($abbreviation, $property, $map) {
+	@each $size, $value in $map {
+		.p#{$abbreviation}-#{$size} {
+			padding-#{$property}: $value !important;
+		}
+	}
+}
+
+@include generate-margin-classes("t", "top", $gaps);
+@include generate-margin-classes("b", "bottom", $gaps);
+@include generate-margin-classes("l", "left", $gaps);
+@include generate-margin-classes("r", "right", $gaps);
+@include generate-negative-margin-classes("t", "top", $gaps);
+@include generate-negative-margin-classes("b", "bottom", $gaps);
+@include generate-negative-margin-classes("l", "left", $gaps);
+@include generate-negative-margin-classes("r", "right", $gaps);
+@include generate-padding-classes("t", "top", $gaps);
+@include generate-padding-classes("b", "bottom", $gaps);
+@include generate-padding-classes("l", "left", $gaps);
+@include generate-padding-classes("r", "right", $gaps);

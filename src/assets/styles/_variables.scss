@@ -95,3 +95,18 @@ $color-error-500: #ef4444 !default;
 $bp-mobile: 480px !default;
 $bp-tablet: 768px !default;
 $bp-desktop: 1024px !default;
+
+// Gaps
+$gaps: (
+  0: 0,
+  xxxs: 2px,
+  xxs: 4px,
+  xs: 8px,
+  s: 12px,
+  m: 16px,
+  l: 20px,
+  xl: 24px,
+  xxl: 32px,
+  xxxl: 40px,
+  auto: auto,
+) !default;

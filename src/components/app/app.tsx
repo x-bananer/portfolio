@@ -1,13 +1,18 @@
-import styles from "./app.module.scss";
+import AppHeader from './app-header/app-header';
+import AppNav from './app-nav/app-nav'
+import AppFooter from './app-footer/app-footer';
 
-import AppHeader from '../app-header/app-header';
-import AppFooter from '../app-footer/app-footer';
+import styles from "./app.module.scss";
 
 const App = () => {
 	return (
 		<div className={styles["app"]}>
 			<div className={styles["app__header"]}>
-				<AppHeader />
+				<AppHeader>
+					<AppNav>
+
+					</AppNav>
+				</AppHeader>
 			</div>
 			<div className={styles["app__content"]}>
 				<section className="layout">
