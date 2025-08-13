@@ -1,0 +1,97 @@
+// Font
+$font-family-main: 'Sora', sans-serif !default;
+
+// Display text
+$display-font-size: 48px !default;
+$display-line-height: 1.17 !default;
+$display-tracking: -2% !default;
+
+// Display text (M)
+$display-m-font-size: 24px !default;
+$display-m-line-height: 1.17 !default;
+$display-m-tracking: -2% !default;
+
+// Sub Heading
+$subheading-font-size: 40px !default;
+$subheading-line-height: 1.2 !default;
+$subheading-tracking: -2% !default;
+
+// Heading H1
+$h1-font-size: 36px !default;
+$h1-line-height: 1.22 !default;
+$h1-tracking: -2% !default;
+
+// Heading H2
+$h2-font-size: 32px !default;
+$h2-line-height: 1.25 !default;
+$h2-tracking: -2% !default;
+
+// Heading H3
+$h3-font-size: 28px !default;
+$h3-line-height: 1.14 !default;
+$h3-tracking: -2% !default;
+
+// Heading H4
+$h4-font-size: 24px !default;
+$h4-line-height: 1.17 !default;
+$h4-tracking: -2% !default;
+
+// Heading H5
+$h5-font-size: 20px !default;
+$h5-line-height: 1.2 !default;
+$h5-tracking: -2% !default;
+
+// Heading H6
+$h6-font-size: 16px !default;
+$h6-line-height: 1.25 !default;
+$h6-tracking: -2% !default;
+
+// Paragraph P1
+$p1-font-size: 20px !default;
+$p1-line-height: 1.2 !default;
+$p1-tracking: 2% !default;
+
+// Paragraph P2
+$p2-font-size: 16px !default;
+$p2-line-height: 1.25 !default;
+$p2-tracking: 2% !default;
+
+// Paragraph P3
+$p3-font-size: 12px !default;
+$p3-line-height: 1.33 !default;
+$p3-tracking: 2% !default;
+
+// Button Text
+$btn1-font-size: 20px !default;
+$btn1-line-height: 1.2 !default;
+$btn1-tracking: 2% !default;
+
+// Button Text 2
+$btn2-font-size: 16px !default;
+$btn2-line-height: 1.25 !default;
+$btn2-tracking: 2% !default;
+
+// Underlined
+$underlined-font-size: 20px !default;
+$underlined-line-height: 1.2 !default;
+$underlined-tracking: -2% !default;
+
+// Primary
+$color-black: #000000 !default;
+$color-neutral: #404040 !default;
+$color-white: #ffffff !default;
+
+// Secondary
+$color-zinc-100: #f4f4f5 !default;
+$color-zinc-200: #e4e4e7 !default;
+$color-zinc-300: #d4d4d8 !default;
+$color-zinc-500: #71717a !default;
+$color-zinc-800: #27272a !default;
+
+// Error
+$color-error-500: #ef4444 !default;
+
+// Media queries
+$bp-mobile: 480px !default;
+$bp-tablet: 768px !default;
+$bp-desktop: 1024px !default;

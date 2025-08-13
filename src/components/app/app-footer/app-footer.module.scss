@@ -1,0 +1,11 @@
+.app-footer {
+    height: 100px;
+    background-color: $color-black;
+    color: $color-white;
+}
+
+.app-footer__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

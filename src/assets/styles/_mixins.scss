@@ -1,0 +1,198 @@
+@use "variables" as *;
+
+// Display
+@mixin display {
+	font-family: $font-family-main;
+	font-size: $display-font-size;
+	line-height: $display-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin display-outlined {
+	@include display;
+	@include text-outlined;
+}
+
+// Display M
+@mixin display-m {
+	font-family: $font-family-main;
+	font-size: $display-m-font-size;
+	line-height: $display-m-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin display-m-outlined {
+	@include display-m;
+	@include text-outlined;
+}
+
+// Subheading
+@mixin subheading {
+	font-family: $font-family-main;
+	font-size: $subheading-font-size;
+	line-height: $subheading-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin subheading-outlined {
+	@include subheading;
+	@include text-outlined;
+}
+
+// H1–H6
+@mixin heading-h1 {
+	font-family: $font-family-main;
+	font-size: $h1-font-size;
+	line-height: $h1-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin heading-h1-outlined {
+	@include heading-h1;
+	@include text-outlined;
+}
+
+@mixin heading-h2 {
+	font-family: $font-family-main;
+	font-size: $h2-font-size;
+	line-height: $h2-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin heading-h2-outlined {
+	@include heading-h2;
+	@include text-outlined;
+}
+
+@mixin heading-h3 {
+	font-family: $font-family-main;
+	font-size: $h3-font-size;
+	line-height: $h3-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin heading-h3-outlined {
+	@include heading-h3;
+	@include text-outlined;
+}
+
+@mixin heading-h4 {
+	font-family: $font-family-main;
+	font-size: $h4-font-size;
+	line-height: $h4-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin heading-h4-outlined {
+	@include heading-h4;
+	@include text-outlined;
+}
+
+@mixin heading-h5 {
+	font-family: $font-family-main;
+	font-size: $h5-font-size;
+	line-height: $h5-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin heading-h5-outlined {
+	@include heading-h5;
+	@include text-outlined;
+}
+
+@mixin heading-h6 {
+	font-family: $font-family-main;
+	font-size: $h6-font-size;
+	line-height: $h6-line-height;
+	letter-spacing: -0.02em;
+}
+@mixin heading-h6-outlined {
+	@include heading-h6;
+	@include text-outlined;
+}
+
+// Paragraphs
+@mixin paragraph-p1 {
+	font-family: $font-family-main;
+	font-size: $p1-font-size;
+	line-height: $p1-line-height;
+	letter-spacing: 0.02em;
+}
+@mixin paragraph-p1-outlined {
+	@include paragraph-p1;
+	@include text-outlined;
+}
+
+@mixin paragraph-p2 {
+	font-family: $font-family-main;
+	font-size: $p2-font-size;
+	line-height: $p2-line-height;
+	letter-spacing: 0.02em;
+}
+@mixin paragraph-p2-outlined {
+	@include paragraph-p2;
+	@include text-outlined;
+}
+
+@mixin paragraph-p3 {
+	font-family: $font-family-main;
+	font-size: $p3-font-size;
+	line-height: $p3-line-height;
+	letter-spacing: 0.02em;
+}
+@mixin paragraph-p3-outlined {
+	@include paragraph-p3;
+	@include text-outlined;
+}
+
+// Buttons
+@mixin button-text-1 {
+	font-family: $font-family-main;
+	font-size: $btn1-font-size;
+	line-height: $btn1-line-height;
+	letter-spacing: 0.02em;
+}
+@mixin button-text-1-outlined {
+	@include button-text-1;
+	@include text-outlined;
+}
+
+@mixin button-text-2 {
+	font-family: $font-family-main;
+	font-size: $btn2-font-size;
+	line-height: $btn2-line-height;
+	letter-spacing: 0.02em;
+}
+@mixin button-text-2-outlined {
+	@include button-text-2;
+	@include text-outlined;
+}
+
+// Underlined
+@mixin underlined {
+	font-family: $font-family-main;
+	font-size: $underlined-font-size;
+	line-height: $underlined-line-height;
+	letter-spacing: -0.02em;
+	text-decoration: underline;
+}
+@mixin underlined-outlined {
+	@include underlined;
+	@include text-outlined;
+}
+
+// Outlined
+@mixin text-outlined($width: 2px, $color: currentColor) {
+	color: transparent;
+	-webkit-text-stroke: $width $color;
+	text-stroke: $width $color;
+}
+
+// Breakpoints
+@mixin respond-to($breakpoint) {
+	@if $breakpoint == mobile {
+		@media (max-width: $bp-mobile) {
+			@content;
+		}
+	} @else if $breakpoint == tablet {
+		@media (max-width: $bp-tablet) {
+			@content;
+		}
+	} @else if $breakpoint == desktop {
+		@media (max-width: $bp-desktop) {
+			@content;
+		}
+	}
+}

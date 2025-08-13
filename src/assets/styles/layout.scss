@@ -1,0 +1,12 @@
+.layout {
+	--padding-x: 80px;
+	--width: 1280px;
+
+	width: 100%;
+	padding-inline: max(var(--padding-x), calc(50vw - var(--width) / 2));
+
+    @include respond-to(tablet) {
+		--padding-x: 16px;
+		--width: 100%;
+	}
+}
