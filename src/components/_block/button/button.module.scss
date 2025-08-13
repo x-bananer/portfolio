@@ -1,0 +1,48 @@
+.button {
+	@include button-text-1;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-inline: 20px;
+	border-radius: 4px;
+	background-color: $color-black;
+	color: $color-white;
+	font-weight: 600;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: background-color 0.3s, color 0.3s;
+    height: 56px;
+    	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: $color-neutral;
+        transform: scale(1.05);
+	}
+
+	&:disabled {
+		background-color: $color-neutral;
+		pointer-events: none;
+	}
+
+	&:active {
+		background-color: $color-white;
+		color: $color-black;
+		border-color: $color-black;
+	}
+}
+
+.button.button--square {
+    width: 56px;
+}
+
+.button.button--small {
+    @include button-text-2;
+
+	padding-inline: 16px;
+    height: 48px;
+}
+
+.button.button--small.button--square {
+    width: 48px;
+}
