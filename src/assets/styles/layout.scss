@@ -5,7 +5,7 @@
 	width: 100%;
 	padding-inline: max(var(--padding-x), calc(50vw - var(--width) / 2));
 
-    @include respond-to(desktop) {
+    @include respond-to(tablet) {
 		--padding-x: 16px;
 		--width: 100%;
 	}
