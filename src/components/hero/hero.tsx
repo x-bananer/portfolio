@@ -17,7 +17,7 @@ const Hero = () => {
 						<h1 className={styles["hero__title"]}>
 							<p className="text-display text-w-200">Hello,</p>
 							<p className="text-display text-w-200">
-								I’m 
+								I’m{" "}
 								<span className="text-w-800">
 									Kseniia Shlenskaia.
 								</span>
@@ -62,7 +62,7 @@ const Hero = () => {
 					/>
 				</div>
 			</div>
-		</ы>
+		</section>
 	);
 };
 
