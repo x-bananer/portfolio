@@ -19,7 +19,7 @@ const Experience = () => {
 			title: "Web Development Intern at Société Générale",
 			startDate: "Sept. 2021",
 			endDate: "Feb. 2022",
-			description: `Acting as the sole frontend developer in a backend-focused team, I led the development of an internal corporate service for Rosbank until 2022 an Russia subsidiary of the global financial group Société Générale. I built the frontend using Vue 2 and collaborated closely with Django/Python developers. Throughout the project, I participated in planning, communicated with internal stakeholders, designed the UI, and iteratively delivered features based on user feedback.`,
+			description: `Acting as the sole frontend developer in a backend-focused team, I led the development of an internal corporate service for Rosbank, until 2022 an Russia subsidiary of the global financial group Société Générale. I built the frontend using Vue 2 and collaborated closely with Django/Python developers. Throughout the project, I participated in planning, communicated with internal stakeholders, designed the UI, and iteratively delivered features based on user feedback.`,
 		},
 		{
 			image: null,
