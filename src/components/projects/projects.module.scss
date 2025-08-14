@@ -8,11 +8,22 @@
 }
 
 .projects__header {
-
+	display: flex;
+	justify-content: center;
 }
 
 .projects__title {
 	text-align: center;
+	position: relative;
+	display: inline;
+}
+
+.projects__title-image {
+    position: absolute;
+    top: -68px;
+    left: -18px;
+    filter: invert(1);
+    height: 90px;
 }
 
 .projects__content {
