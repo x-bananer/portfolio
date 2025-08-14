@@ -35,14 +35,14 @@ const Card = ({ image, title, description, startDate, endDate }: CardProps) => {
                 }
 			</div>
             {description &&
-                <div className={styles["card__content"]}>
+                <p className={styles["card__content"]}>
                     {description.split('\n').map((line, idx) => (
                         <span key={idx}>
                             {line}
                             <br />
                         </span>
                     ))}
-                </div>
+                </p>
             }
 		</div>
 	);

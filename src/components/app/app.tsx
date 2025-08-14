@@ -6,6 +6,7 @@ import Hero from '../hero/hero';
 import Skills from '../skills/skills';
 import Experience from '../experience/experience';
 import About from '../about/about';
+import Projects from '../projects/projects';
 
 import styles from "./app.module.scss";
 
@@ -22,6 +23,7 @@ const App = () => {
 				<Skills />
 				<Experience />
 				<About />
+				<Projects />
 			</div>
 			<div className={styles["app__footer"]}>
 				<AppFooter />
