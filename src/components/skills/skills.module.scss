@@ -29,7 +29,6 @@
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 60px;
 	grid-row-gap: 40px;
-	display: grid;
 
 	@include respond-to(desktop) {
 		grid-template-columns: repeat(4, 1fr);

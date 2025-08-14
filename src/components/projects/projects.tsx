@@ -6,7 +6,7 @@ import fav from '../../assets/images/fav.png';
 
 import lsm from "../../assets/images/projects/lsm.png";
 import epl from "../../assets/images/projects/epl.png";
-import ihe from "../../assets/images/projects/ihe.png";
+// import ihe from "../../assets/images/projects/ihe.png";
 import idw from "../../assets/images/projects/idw.png";
 import gpm from "../../assets/images/projects/gpm.png";
 import auth from "../../assets/images/projects/auth.png";

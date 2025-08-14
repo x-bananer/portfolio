@@ -3,7 +3,7 @@ import styles from "./experience.module.scss";
 import duotekLogo from "../../assets/images/duotek-logo.png";
 import rosbankLogo from "../../assets/images/sgbank-logo.png";
 
-import Card from "../_block/card/card";
+import PlateWide from "../_block/plate-wide/plate-wide";
 
 const Experience = () => {
 	const EXPERIENCES = [
@@ -23,10 +23,10 @@ const Experience = () => {
 		},
 		{
 			image: null,
-			title: "Multimedia Content Editor and Team Lead",
+			title: "Multimedia Content Creator and Team Lead",
 			startDate: "Apr. 2016",
 			endDate: "Jul. 2021",
-			description: `Originally trained in media and communication, I worked as a reporter and editor in several media outlets across Kazakhstan and Russia, leading a team of 10 authors for two years. Curated and structured content, oversaw visual design, and managed social media channels. Produced multimedia materials and digital longreads. This experience shaped my approach to content structure, visual clarity, and user-centered communication, which I now apply in team-based projects and interface development.`
+			description: `Originally trained in media and communication, I worked as a reporter and editor in several media outlets across Kazakhstan and Russia, leading a department with a team of 10 authors for two years. Curated and structured content, oversaw visual design, and managed social media channels. Produced multimedia materials and digital longreads. This experience shaped my approach to content structure, visual clarity, and user-centered communication, which I now apply in team-based projects and interface development.`
 		}
 	];
 
@@ -46,7 +46,7 @@ const Experience = () => {
 						<ul className={styles["experience__list"]}>
 							{EXPERIENCES.map((item, index) => (
 								<li key={index}>
-									<Card
+									<PlateWide
 										image={item.image}
 										title={item.title}
 										startDate={item.startDate}

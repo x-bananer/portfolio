@@ -1,0 +1,59 @@
+.plate-wide {
+	padding: 30px 24px;
+	border: 1px solid $color-gray-500;
+	border-radius: 10px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.plate-wide:hover {
+	background-color: $color-gray-800;
+	border-color: transparent;
+}
+
+.plate-wide__header {
+	display: flex;
+	align-items: center;
+}
+
+.plate-wide__media {
+	flex-grow: 1;
+	flex-shrink: 1;
+	display: flex;
+	align-items: center;
+}
+
+.plate-wide__image {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+}
+
+.plate-wide__title {
+	@include heading-h4;
+
+	color: $color-white;
+	font-weight: 600;
+}
+
+.plate-wide__image + .plate-wide__title {
+	padding-left: 30px;
+}
+
+.plate-wide__caption {
+	@include heading-h5;
+
+	flex-grow: 0;
+	flex-shrink: 0;
+
+	color: $color-gray-300;
+	font-weight: 600;
+}
+
+.plate-wide__content {
+	@include paragraph-p2;
+	color: $color-gray-300;
+}
+
+.plate-wide__header + .plate-wide__content {
+	padding-top: 28px;
+}

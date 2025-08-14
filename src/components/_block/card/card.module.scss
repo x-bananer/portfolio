@@ -1,59 +1,87 @@
 .card {
-	padding: 30px 24px;
-	border: 1px solid $color-gray-500;
+	height: 100%;
+	max-width: 320px;
+}
+
+.card__container {
+	height: 100%;
+	padding: 40px;
+	border-radius: 20px;
+	background-color: $color-white;
+	box-shadow: 0px 8px 20px -8px rgba(24, 39, 75, 0.12),
+		0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+	transition: all 0.3s ease;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+
+	&:hover {
+		background-color: $color-black;
+
+		.card__title,
+		.card__subtitle,
+		.card__description {
+			color: $color-white;
+		}
+
+		.card__divider {
+			background-color: $color-white;
+		}
+
+		.card__image {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.card__picture {
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
 	border-radius: 10px;
-	transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.card:hover {
-	background-color: $color-gray-800;
-	border-color: transparent;
-}
-
-.card__header {
-	display: flex;
-	align-items: center;
-}
-
-.card__media {
-	flex-grow: 1;
-	flex-shrink: 1;
-	display: flex;
-	align-items: center;
+	border: 1px solid $color-black;
 }
 
 .card__image {
-	width: 32px;
-	height: 32px;
-	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top center;
+	transition: all 0.3s ease;
+}
+
+.card__divider {
+	height: 2px;
+	width: 120px;
+	background-color: $color-black;
 }
 
 .card__title {
-	@include heading-h4;
-
-	color: $color-white;
+	@include heading-h5;
+	color: $color-neutral;
 	font-weight: 600;
+	text-align: center;
+	transition: all 0.3s ease;
 }
 
-.card__image + .card__title {
-	padding-left: 30px;
-}
-
-.card__caption {
+.card__subtitle {
 	@include heading-h6;
-
-	flex-grow: 0;
-	flex-shrink: 0;
-
-	color: $color-gray-300;
+	color: $color-gray-500;
 	font-weight: 600;
+	text-align: center;
+	transition: all 0.3s ease;
 }
 
-.card__content {
-	@include paragraph-p2;
-	color: $color-gray-300;
-}
-
-.card__header + .card__content {
-	padding-top: 28px;
+.card__description {
+	@include button-text-2;
+	color: $color-neutral;
+	text-align: center;
+	transition: all 0.3s ease;
+	min-height: 45px;
 }

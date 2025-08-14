@@ -1,49 +1,25 @@
+
 import styles from "./card.module.scss";
 
 interface CardProps {
-	image?: string | null;
-	title?: string;
-	description?: string;
-	startDate?: string;
-	endDate?: string;
+	image: string;
+	description: string;
+	title: string;
+	subtitle: string;
 }
 
-const Card = ({ image, title, description, startDate, endDate }: CardProps) => {
-	const period = startDate || endDate ? startDate + " – " + endDate : null;
-
+const Card = ({ image, description, title, subtitle }: CardProps) => {
 	return (
 		<div className={styles["card"]}>
-			<div className={styles["card__header"]}>
-				<div className={styles["card__media"]}>
-                    {image &&
-                        <img
-                            className={styles["card__image"]}
-                            src={image}
-                            alt={title}
-                        />
-                    }
-                    {title &&
-                        <p className={styles["card__title"]}>
-                            {title}
-                        </p>
-                    }
+			<div className={styles["card__container"]}>
+				<div className={styles["card__picture"]}>
+					<img className={styles["card__image"]} src={image} alt={title} />
 				</div>
-				{period &&
-					<div className={styles["card__caption"]}>
-                        {period}
-                    </div>
-                }
+				<p className={styles["card__description"]}>{description}</p>
+				<div className={styles["card__divider"]}></div>
+				<h3 className={styles["card__title"]}>{title}</h3>
+				<p className={styles["card__subtitle"]}>{subtitle}</p>
 			</div>
-            {description &&
-                <p className={styles["card__content"]}>
-                    {description.split('\n').map((line, idx) => (
-                        <span key={idx}>
-                            {line}
-                            <br />
-                        </span>
-                    ))}
-                </p>
-            }
 		</div>
 	);
 };
