@@ -12,7 +12,7 @@ const Experience = () => {
 			title: "Frontend Developer at Duotek LLC",
 			startDate: "Feb. 2022",
 			endDate: "Present",
-			description: `At Duotek, a software development company focused on building scalable web services, I started as a Junior Developer and grew into a Middle+ role. Over four years, I contributed to 11 client-facing products, leading the frontend implementation in 7 of them from prototyping to production. Worked with Vue 2/Nuxt 2, later with Vue 3/Nuxt 3 and Capacitor. Created internal tools and libraries to enhance the stack. Currently responsible for frontend architecture, UI development, and team collaboration. Also involved in recruitment and onboarding processes.`,
+			description: `At Duotek, a software development company focused on building scalable web services, I started as a Junior Developer and grew into a Middle+ role. Over four years, I contributed to 11 client-facing products, leading the frontend implementation in 7 of them from UI implementation to production release. Worked with Vue 2 / Nuxt 2, later with Vue 3 / Nuxt 3 and Capacitor. Created internal tools and libraries to enhance the stack. Currently responsible for frontend architecture, UI development, and team collaboration. Also involved in recruitment and onboarding processes.`,
 		},
 		{
 			image: rosbankLogo,
