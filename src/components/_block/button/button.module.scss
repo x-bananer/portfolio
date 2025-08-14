@@ -12,7 +12,7 @@
 	font-weight: 600;
 	cursor: pointer;
 	border: 2px solid transparent;
-	height: 56px;
+	height: 48px;
 	transition: all 0.3s ease;
 
 	&:disabled {
@@ -33,7 +33,7 @@
 }
 
 .button.button--square {
-	width: 56px;
+	width: 48px;
 	padding: 0;
 
 	&:hover {
@@ -45,11 +45,11 @@
 	@include button-text-2;
 
 	padding-inline: 16px;
-	height: 48px;
+	height: 40px;
 }
 
 .button.button--small.button--square {
-	width: 48px;
+	width: 40px;
 }
 
 .button.button--simple {

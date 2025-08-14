@@ -1,5 +1,5 @@
 .app-header {
-	height: 104px;
+	height: 80px;
 	transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	background-color: $color-white;
 }
@@ -17,6 +17,6 @@
 }
 
 .app-header__logo {
-	height: 56px;
+	height: 48px;
 	object-fit: contain;
 }
