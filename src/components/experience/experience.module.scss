@@ -1,3 +1,30 @@
 .experience {
-	// styles for Experience
+	background-color: $color-black;
+	color: $color-white;
+}
+
+.experience__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-block: 60px;
+}
+
+.experience__content {
+	padding-block: 20px;
+	width: 100%;
+}
+
+.experience__header + .experience__content {
+	margin-top: 60px;
+}
+
+.experience__title {
+	
+}
+
+.experience__list {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
 }

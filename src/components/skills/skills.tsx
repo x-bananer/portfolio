@@ -23,11 +23,12 @@ import { HiOutlineCloudDownload } from "react-icons/hi";
 import { MdShowChart } from "react-icons/md";
 import { FaVideo } from "react-icons/fa";
 import { SiWebpack } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
+// import { SiNextdotjs } from "react-icons/si";
 import { BiLogoJavascript } from "react-icons/bi";
 import { IoCubeOutline } from "react-icons/io5";
 import { SiFlask } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
+import { RiVuejsFill } from "react-icons/ri";
 
 const Skills = () => {
 	const SKILLS = {
@@ -35,10 +36,11 @@ const Skills = () => {
 			{ title: "JavaScript", icon: <BiLogoJavascript /> },
 			{ title: "React", icon: <FaReact /> },
 			{ title: "Redux", icon: <SiRedux /> },
-			{ title: "Next.js", icon: <SiNextdotjs /> },
+			// { title: "Next.js", icon: <SiNextdotjs /> },
 			{ title: "Vue.js", icon: <IoLogoVue /> },
-			{ title: "Nuxt.js", icon: <SiNuxtdotjs /> },
+			{ title: "Vuex", icon: <RiVuejsFill />},
 			{ title: "Pinia", icon: <GiPineapple /> },
+			{ title: "Nuxt.js", icon: <SiNuxtdotjs /> },
 			{ title: "TypeScript", icon: <SiTypescript /> },
 			{ title: "Sass", icon: <FaSass /> },
 			{ title: "Vuetify", icon: <SiVuetify /> },
@@ -76,7 +78,7 @@ const Skills = () => {
 			<div className={`${styles["skills__container"]} layout`}>
 				<div className={styles["skills__header"]}>
 					<h2 className={styles["skills__title"]}>
-						<span className="text-display">My</span>{" "}
+						<span className="text-display">My </span>{" "}
 						<span className="text-display text-w-800">Skills</span>
 					</h2>
 				</div>

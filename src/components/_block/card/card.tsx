@@ -1,7 +1,7 @@
 import styles from "./card.module.scss";
 
 interface CardProps {
-	image?: string;
+	image?: string | null;
 	title?: string;
 	description?: string;
 	startDate?: string;
@@ -36,7 +36,12 @@ const Card = ({ image, title, description, startDate, endDate }: CardProps) => {
 			</div>
             {description &&
                 <div className={styles["card__content"]}>
-                    {description}
+                    {description.split('\n').map((line, idx) => (
+                        <span key={idx}>
+                            {line}
+                            <br />
+                        </span>
+                    ))}
                 </div>
             }
 		</div>

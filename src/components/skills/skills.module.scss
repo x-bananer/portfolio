@@ -10,11 +10,9 @@
 }
 
 .skills__header {
-
 }
 
 .skills__title {
-
 }
 
 .skills__header + .skills__content {
@@ -32,7 +30,6 @@
 	grid-column-gap: 60px;
 	grid-row-gap: 40px;
 	display: grid;
-
 
 	@include respond-to(desktop) {
 		grid-template-columns: repeat(4, 1fr);
@@ -54,4 +51,3 @@
 .skills__section + .skills__section {
 	margin-top: 60px;
 }
-
