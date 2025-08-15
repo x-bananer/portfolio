@@ -34,7 +34,7 @@ const Projects = () => {
 		{
 			image: lsm,
 			title: "Legio Sound & Music",
-			description: `Legio Sound & Music is a platform for licensing and streaming high-quality audio content designed for film, advertising, and media projects. It features user accounts with subscription options, playlist creation, and license management. A complex multi-level filtering system supports efficient content discovery. Audio is streamed seamlessly across devices without requiring full file downloads.`,
+			description: `Legio Sound & Music is a platform for licensing and streaming audio content designed for film, advertising, and media projects. It features user accounts with subscription options, playlist creation, and license management. A complex multi-level filtering system supports efficient content discovery. Audio is streamed seamlessly across devices without requiring full file downloads.`,
 			link: `https://legiosoundmusic.ru/en`,
 		},
 		{

@@ -13,6 +13,7 @@ const Experience = () => {
 			startDate: "Feb. 2022",
 			endDate: "Present",
 			description: `At Duotek, a software development company focused on building scalable web services, I started as a Junior Developer and grew into a Middle+ role. Over four years, I contributed to 11 client-facing products, leading the frontend implementation in 7 of them from UI implementation to production release. Worked with Vue 2 / Nuxt 2, later with Vue 3 / Nuxt 3 and Capacitor. Created internal tools and libraries to enhance the stack. Currently responsible for frontend architecture, UI development, and team collaboration. Also involved in recruitment and onboarding processes.`,
+			link: "https://duotek.ru/about",
 		},
 		{
 			image: rosbankLogo,
@@ -20,6 +21,7 @@ const Experience = () => {
 			startDate: "Sept. 2021",
 			endDate: "Feb. 2022",
 			description: `Acting as the sole frontend developer in a backend-focused team, I led the development of an internal corporate service for Rosbank, until 2022 a subsidiary of the global financial group Société Générale. I built the frontend using Vue 2 and collaborated closely with Django/Python developers. Throughout the project, I participated in planning, communicated with internal stakeholders, designed the UI, and iteratively delivered features based on user feedback.`,
+			link: "https://particuliers.sg.fr/",
 		},
 		{
 			image: null,
@@ -46,13 +48,15 @@ const Experience = () => {
 						<ul className={styles["experience__list"]}>
 							{EXPERIENCES.map((item, index) => (
 								<li key={index}>
-									<PlateWide
-										image={item.image}
-										title={item.title}
-										startDate={item.startDate}
-										endDate={item.endDate}
-										description={item.description}
-									/>
+									<a href={item.link} target="_blank">
+										<PlateWide
+											image={item.image}
+											title={item.title}
+											startDate={item.startDate}
+											endDate={item.endDate}
+											description={item.description}
+										/>
+									</a>
 								</li>
 							))}
 						</ul>

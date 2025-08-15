@@ -17,6 +17,7 @@ const Certifications = () => {
 			source: "LoftShool",
 			description:
 				"Vue.js, NPM, Yarn, Webpack, ESLint, Axios, Vue Router, Vuex, Tokens (JWT), Composition API, Jest",
+			file: "vue.pdf",
 		},
 
 		{
@@ -25,12 +26,14 @@ const Certifications = () => {
 			source: "LoftShool",
 			description:
 				"React.js, Redux, Redux-Saga, Forms, CI/CD, Client Error Handling, Development Libraries",
+			file: "react.pdf",
 		},
 		{
 			image: nuxt,
 			title: "The Nuxt 3 Bootcamp",
 			source: "Udemy",
 			description: "Nuxt 3, Vue 3, TypeScript, REST API, SSR, CSR",
+			file: "nuxt.pdf",
 		},
 		{
 			image: node,
@@ -38,6 +41,7 @@ const Certifications = () => {
 			source: "LoftShool",
 			description:
 				"Node.js, Express.js, Koa.js, REST API, Databases, WebSocket, Deployment, SSR",
+			file: "node.pdf",
 		},
 		{
 			image: js,
@@ -45,12 +49,14 @@ const Certifications = () => {
 			source: "LoftShool",
 			description:
 				"JavaScript (ES6), DOM, Browser API, OOP, MV, Modules, Node.js, Error Handling, Debugging, API Integration",
+			file: "js.pdf",
 		},
 		{
 			image: html,
 			title: "Basics of HTML & CSS",
 			source: "LoftShool",
 			description: "HTML5, CSS3, BEM, Figma, CSS Animations",
+			file: "html.pdf",
 		},
 	];
 
@@ -69,12 +75,14 @@ const Certifications = () => {
 					<ul className={styles["certifications__grid"]}>
 						{CERTIFICATIONS.map((item, index) => (
 							<li key={index}>
-								<Card
-									image={item.image}
-									title={item.title}
-									description={item.description}
-									subtitle={item.source}
-								/>
+								<a href={`/certificates/${item.file}`} target="_blank">
+									<Card
+										image={item.image}
+										title={item.title}
+										description={item.description}
+										subtitle={item.source}
+									/>
+								</a>
 							</li>
 						))}
 					</ul>
