@@ -5,7 +5,6 @@ import logo from "../../../assets/images/logo.png";
 import styles from "./app-footer.module.scss";
 
 const AppFooter = () => {
-
 	const handleCreditsClick = () => {
 		// TODO Add modal window
 		// const DESIGNER_LINK = "https://www.behance.net/jhanvishah2";
@@ -26,7 +25,12 @@ const AppFooter = () => {
 						size="small"
 						onClick={handleCreditsClick}
 					>
-						@ 2025 | Design: Jhanvi Shah | Dev: Kseniia Shlenskaia
+						<a
+							href="https://www.behance.net/jhanvishah2"
+							target="_blank"
+						>
+							@ 2025 | Design: Jhanvi Shah
+						</a>
 					</Button>
 				</div>
 			</div>
