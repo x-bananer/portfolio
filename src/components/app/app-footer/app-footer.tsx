@@ -26,7 +26,7 @@ const AppFooter = () => {
 						size="small"
 						onClick={handleCreditsClick}
 					>
-						@ 2025 | Credits
+						@ 2025 | Design: Jhanvi Shah | Dev: Kseniia Shlenskaia
 					</Button>
 				</div>
 			</div>
