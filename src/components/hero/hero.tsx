@@ -43,15 +43,21 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className={styles["hero__bar"]}>
-						<Button type="square" effect="light">
-							<FaGithub size={24}></FaGithub>
-						</Button>
-						<Button type="square" effect="light">
-							<FaLinkedin size={24}></FaLinkedin>
-						</Button>
-						<Button type="square" effect="light">
-							<BiLogoGmail size={24}></BiLogoGmail>
-						</Button>
+						<a href="https://github.com/x-bananer" target="_blank">
+							<Button type="square" effect="light">
+								<FaGithub size={24}></FaGithub>
+							</Button>
+						</a>
+						<a href="https://www.linkedin.com/in/kseniia-shlenskaia-502004353/" target="_blank">
+							<Button type="square" effect="light">
+								<FaLinkedin size={24}></FaLinkedin>
+							</Button>
+						</a>
+						<a href="mailto:kseniia.shlenskaia@gmail.com?subject=Portfolio Inquiry">
+							<Button type="square" effect="light">
+								<BiLogoGmail size={24}></BiLogoGmail>
+							</Button>
+						</a>
 					</div>
 				</div>
 				<div className={styles["hero__background"]}>
