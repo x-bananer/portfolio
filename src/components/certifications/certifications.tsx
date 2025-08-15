@@ -75,7 +75,7 @@ const Certifications = () => {
 					<ul className={styles["certifications__grid"]}>
 						{CERTIFICATIONS.map((item, index) => (
 							<li key={index}>
-								<a href={`/certificates/${item.file}`} target="_blank">
+								<a href={`/portfolio/certificates/${item.file}`} target="_blank">
 									<Card
 										image={item.image}
 										title={item.title}

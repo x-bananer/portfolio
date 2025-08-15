@@ -43,9 +43,11 @@ const AppHeader = ({ children }: AppHeaderProps) => {
 					/>
 				</Button>
 				{children}
-				<Button>
-					Resume <FiDownload size={20} className="ml-xs" />
-				</Button>
+				<a href="/portfolio/resume.pdf" target="_blank">
+					<Button>
+						Resume <FiDownload size={20} className="ml-xs" />
+					</Button>
+				</a>
 			</div>
 		</div>
 	);
