@@ -23,7 +23,7 @@ const Hero = () => {
 								</span>
 							</p>
 							<p className="text-display">
-								<span className="text-w-800">Frontend</span>{" "}
+								<span className="text-w-800">Software</span>{" "}
 								<span className="text-outlined text-w-800">
 									Developer
 								</span>
@@ -33,14 +33,14 @@ const Hero = () => {
 								<span className="text-w-800">Finland.</span>
 							</p>
 						</h1>
-						<p className={styles["hero__subtitle"]}>
-							I'm an experienced Vue & React developer focused
-							on building clean, fast, and accessible interfaces,
-							with a growing interest in backend development.
-							I care about real-world performance and scalable
-							architecture. Take a look around and feel free
-							to get in touch!
-						</p>
+						<div className={styles["hero__subtitle"]}>
+							<p className="mb-xs">
+								Hello! Здравствуйте! Ahoj! Сәлем! Moi!
+							</p>
+							<p className="mb-xs">
+								I’ve spent the last 5 years working deeply with React and Vue, growing into a strong mid-to-senior frontend developer, but recently Python and ML have started pulling me in - and, honestly, they won. Take a look at my favourite projects I’m proud of and feel free to reach out!
+							</p>
+						</div>
 					</div>
 					<div className={styles["hero__bar"]}>
 						<a href="https://github.com/x-bananer" target="_blank">

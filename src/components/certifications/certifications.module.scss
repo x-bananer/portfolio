@@ -13,8 +13,17 @@
 	padding-block: 20px;
 }
 
+.certifications__header {
+	text-align: center;
+}
+
 .certifications__header + .certifications__content {
-	margin-top: 60px;
+	margin-top: 40px;
+}
+
+.certifications__subtitle {
+	color: #71717a;
+	margin-top: 12px;
 }
 
 .certifications__grid {

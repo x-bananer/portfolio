@@ -39,7 +39,7 @@ const AppHeader = ({ children }: AppHeaderProps) => {
 					<img
 						className={styles["app-header__logo"]}
 						src={logo}
-						alt="Frontend Developer Portfolio | Kseniia Shlenskaia"
+						alt="Software Developer Portfolio | Kseniia Shlenskaia"
 					/>
 				</Button>
 				{children}

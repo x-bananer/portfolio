@@ -10,13 +10,16 @@
 }
 
 .skills__header {
+	text-align: center;
 }
 
-.skills__title {
+.skills__subtitle {
+	color: #71717a;
+	margin-top: 12px;
 }
 
 .skills__header + .skills__content {
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 .skills__content {
@@ -26,7 +29,6 @@
 .skills__grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 60px;
 	grid-row-gap: 40px;
 

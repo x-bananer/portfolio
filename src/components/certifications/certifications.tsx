@@ -70,6 +70,9 @@ const Certifications = () => {
 							Certifications
 						</span>
 					</h2>
+					<p className={styles["certifications__subtitle"]}>
+						Some early certificates from my “baby developer” era. Cute, right?
+					</p>
 				</div>
 				<div className={styles["certifications__content"]}>
 					<ul className={styles["certifications__grid"]}>

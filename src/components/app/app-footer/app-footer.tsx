@@ -16,7 +16,7 @@ const AppFooter = () => {
 				<img
 					className={styles["app-footer__logo"]}
 					src={logo}
-					alt="Frontend Developer Portfolio | Kseniia Shlenskaia"
+					alt="Software Developer Portfolio | Kseniia Shlenskaia"
 				/>
 				<div className={styles["app-footer__text"]}>
 					<Button
