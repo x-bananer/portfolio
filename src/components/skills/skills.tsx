@@ -93,7 +93,7 @@ const Skills = () => {
 						<span className="text-display">My </span>{" "}
 						<span className="text-display text-w-800">Skills</span>
 					</h2>
-					<p className={styles["skills__subtitle"]}>I’ve really used all of this in production on paid projects. No, seriously.</p>
+					<p className={styles["skills__subtitle"]}>I’ve really used all of this in production on paid projects. No, seriously</p>
 				</div>
 				<div className={styles["skills__content"]}>
 					{Object.entries(SKILLS).map(([category, items]) => (

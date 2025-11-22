@@ -19,7 +19,7 @@ const Hero = () => {
 							<p className="text-display text-w-200">
 								I’m{" "}
 								<span className="text-w-800">
-									Kseniia Shlenskaia.
+									Kseniia Shlenskaia.
 								</span>
 							</p>
 							<p className="text-display">

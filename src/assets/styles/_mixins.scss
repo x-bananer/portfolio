@@ -190,6 +190,10 @@
 		@media (max-width: $bp-tablet) {
 			@content;
 		}
+    } @else if $breakpoint == tablet-to-desktop {
+		@media (max-width: $bp-tablet-to-desktop) {
+			@content;
+		}
 	} @else if $breakpoint == desktop {
 		@media (max-width: $bp-desktop) {
 			@content;

@@ -7,6 +7,10 @@
 	flex-direction: column;
 	align-items: center;
 	padding-block: 60px;
+
+	@include respond-to(tablet) {
+		padding-block: 40px;
+	}
 }
 
 .skills__header {
@@ -20,10 +24,15 @@
 
 .skills__header + .skills__content {
 	margin-top: 40px;
+
+	@include respond-to(tablet) {
+		margin-top: 20px;
+	}
 }
 
 .skills__content {
 	padding-block: 20px;
+	width: 100%;
 }
 
 .skills__grid {
@@ -46,9 +55,14 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 20px;
 		grid-row-gap: 10px;
+		gap: 12px;
 	}
 }
 
 .skills__section + .skills__section {
 	margin-top: 60px;
+
+	@include respond-to(tablet) {
+		margin-top: 40px;
+	}
 }

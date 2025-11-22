@@ -1,6 +1,10 @@
 .hero__container {
 	display: flex;
 	padding-block: 60px;
+
+	@include respond-to(tablet) {
+		padding-block: 40px;
+	}
 }
 
 .hero__content {
@@ -11,6 +15,10 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	gap: 64px;
+
+	@include respond-to(tablet) {
+		gap: 40px;
+	}
 }
 
 .hero__header {
@@ -24,6 +32,10 @@
 .hero__background {
 	flex-grow: 0;
 	flex-shrink: 0;
+
+	@include respond-to(tablet-to-desktop) {
+		display: none;
+	}
 }
 
 .hero__image {

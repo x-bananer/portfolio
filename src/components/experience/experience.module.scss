@@ -8,6 +8,10 @@
 	flex-direction: column;
 	align-items: center;
 	padding-block: 60px;
+
+	@include respond-to(tablet) {
+		padding-block: 40px;
+	}
 }
 
 .experience__content {
@@ -17,6 +21,10 @@
 
 .experience__header + .experience__content {
 	margin-top: 40px;
+
+	@include respond-to(tablet) {
+		margin-top: 20px;
+	}
 }
 
 .experience__title {
