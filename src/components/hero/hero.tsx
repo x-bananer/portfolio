@@ -25,7 +25,7 @@ const Hero = () => {
 							<p className="text-display">
 								<span className="text-w-800">Software</span>{" "}
 								<span className="text-outlined text-w-800">
-									Developer
+									Engineer
 								</span>
 							</p>
 							<p className="text-display text-w-200">
@@ -38,7 +38,7 @@ const Hero = () => {
 								Hello! Здравствуйте! Ahoj! Сәлем! Moi!
 							</p>
 							<p className="mb-xs">
-								I’ve spent the last 5 years working deeply with React and Vue, growing into a strong mid-to-senior frontend developer, but recently Python and ML have started pulling me in - and, honestly, they won. Take a look at my favourite projects I’m proud of and feel free to reach out!
+								I've spent the last 5 years building software and growing into a strong software developer. Along the way I started studying ICT, expanded from frontend into backend, infrastructure, testing, databases, and a bit of AI. Take a look at some of my favorite projects! I'd love to hear what you think ❀ ✿
 							</p>
 						</div>
 					</div>
