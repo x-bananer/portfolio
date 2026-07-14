@@ -38,7 +38,7 @@ const Hero = () => {
 								Hello! Здравствуйте! Ahoj! Сәлем! Moi!
 							</p>
 							<p className="mb-xs">
-								I've spent the last 5 years building software and growing into a strong software developer. Along the way I started studying ICT, expanded from frontend into backend, infrastructure, testing, databases, and a bit of AI. Take a look at some of my favorite projects! I'd love to hear what you think ❀ ✿
+								I've spent the last 5 years learning programming, building software, and growing into a strong developer. Along the way I started an ICT degree, expanded from frontend into backend, infrastructure, testing, databases, and a bit of AI. Take a look at some of my favorite projects! I'd love to hear what you think ❀ ✿
 							</p>
 						</div>
 					</div>
@@ -64,7 +64,7 @@ const Hero = () => {
 					<img
 						className={styles["hero__image"]}
 						src={hero}
-						alt="Girl banner | Kseniia Shlenskaia | Frontend Dev"
+						alt="Girl banner | Kseniia Shlenskaia | Software Dev"
 					/>
 				</div>
 			</div>
