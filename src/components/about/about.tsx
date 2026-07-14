@@ -3,12 +3,15 @@ import styles from "./about.module.scss";
 import about from "../../assets/images/about.png";
 
 const About = () => {
-	const DESCRIPTION = `Meet ✨me✨, a frontend developer with 4+ years of experience building production-ready apps using Vue, Nuxt, and React. I've delivered complex interfaces for B2B platforms, internal systems, and media-rich products, including payment flows, real-time chat, multilingual support, and custom audio streaming.
-		\n
-		I live in Finland, study ICT, and speak Russian, English, and a bit of Finnish, though Finnish still keeps me humble. When I'm not coding, you'll probably find me doing yoga, reading psychology books, cycling around, or diving into new tech just for the joy of it.
-		\n
-		Let's make something fast, clean, and user-friendly – and maybe even a little delightful.
-		`;
+	const DESCRIPTION = `
+	Meet ✦me✦! Fun fact: I wasn't even supposed to become a software developer. I studied journalism, got curious about technology while writing an article about Elon Musk, and fell down the rabbit hole. Looking back, that turned out to be a surprisingly good accident.
+	\n
+	These days I live in Finland, study ICT, play badminton, occasionally go climbing (despite being afraid of heights), and read far too many psychology books. I also love travelling, learning new things, and – my guilty pleasure – painting by numbers.
+	\n
+	Oh, and I'm an incredibly picky eater.
+	`;
+
+	const QUOTE = "Make it work. Make it right. Make it fast.";
 
 	return (
 		<div className={styles["about"]}>
@@ -31,6 +34,15 @@ const About = () => {
 								{line}
 							</p>
 						))}
+					</div>
+					<div className={styles["about__quote"]}>
+						<p className={styles["about__quote-label"]}>
+							A stylish quote for an epic ending:
+						</p>
+						<p className={styles["about__quote-text"]}>"{QUOTE}"</p>
+						<p className={styles["about__quote-author"]}>
+							- Kent Beck, pioneer of Test-Driven Development
+						</p>
 					</div>
 				</div>
 			</div>
