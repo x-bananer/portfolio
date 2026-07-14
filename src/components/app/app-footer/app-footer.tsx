@@ -29,7 +29,7 @@ const AppFooter = () => {
 							href="https://www.behance.net/jhanvishah2"
 							target="_blank"
 						>
-							@ 2025 | Design: Jhanvi Shah
+							@ 2026 | Design: Jhanvi Shah
 						</a>
 					</Button>
 				</div>
