@@ -43,7 +43,7 @@ const AppHeader = ({ children }: AppHeaderProps) => {
 					/>
 				</Button>
 				{children}
-				<a href="/portfolio/Kseniia Shlenskaia - Software Developer Resume.pdf" target="_blank">
+				<a href="/portfolio/Kseniia Shlenskaia - Software Engineer.pdf" target="_blank">
 					<Button>
 						Resume <FiDownload size={20} className="ml-xs" />
 					</Button>
